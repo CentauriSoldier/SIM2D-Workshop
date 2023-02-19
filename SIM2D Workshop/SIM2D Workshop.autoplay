@@ -18,8 +18,8 @@
 <Office2007Theme Theme="5"/>
 <WindowStyles>
 <Width>1600</Width>
-<Height>1200</Height>
-<WindowTitle>Sim2D Workshop</WindowTitle>
+<Height>1000</Height>
+<WindowTitle>My Project</WindowTitle>
 <WindowStyle>0</WindowStyle>
 <FillColor>0</FillColor>
 </WindowStyles>
@@ -63,13 +63,16 @@
 <Tracks/>
 </AudioBGMusic>
 <Globals>
-<Script>Project.Init("Sim2D Workshop", "Centauri Soldier", "Delphi IIabs", "www.github.com/CentauriSoldier", "", "The Unlicense", "Free to use and distribute", "Sim2D Workshop.exe", "Sim2D Workshop.ico", "", "", "", false);
-require("Sim2D.Init");
-print(SIM2D.PATH.DIR.WRITE)</Script>
+<Script>Project.Init("Sim2D Workshop", "Centauri Soldier", "", "https://github.com/CentauriSoldier/Sim2D", "", "The Unlicense", "Free to use and distribute", "Sim2D Workshop.exe", "Sim2D Workshop.ico", "", "", "", false);
+require("Sim2D.Init")
+
+S2DProject = {
+
+};</Script>
 <BookMarks count="0">
 </BookMarks>
-<DesignCodeLine>2</DesignCodeLine>
-<DesignCodeCol>27</DesignCodeCol>
+<DesignCodeLine>1</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 </Globals>
 <Defaults>
 <StartupPage>_PageFirst</StartupPage>
@@ -271,28 +274,28 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <Description/>
 <Keywords/>
 <Background>
-<Type>0</Type>
+<Type>2</Type>
 <ImageStyle>0</ImageStyle>
 <TopColor>16711680</TopColor>
 <BottomColor>16777215</BottomColor>
-<UseCustomBackgroundSettings>0</UseCustomBackgroundSettings>
+<UseCustomBackgroundSettings>1</UseCustomBackgroundSettings>
 <TransitionEffect/>
 <TransProps/>
 <NormalImage>
-<Filename/>
+<Filename>AutoPlay\Images\Welcome Background.jpg</Filename>
 </NormalImage>
 </Background>
 <Event>
 <Name>On Preload</Name>
 <Args/>
-<Script/>
+<Script>Audio.Load(CHANNEL_BACKGROUND, "AutoPlay\\Audio\\password-infinity-123276.mp3", true, false);</Script>
 <TreeStates>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>4079394</DesignCodeLine>
-<DesignCodeCol>5196032</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>93</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -305,22 +308,23 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>4079394</DesignCodeLine>
-<DesignCodeCol>13625</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
 <Event>
 <Name>On Close</Name>
 <Args/>
-<Script/>
+<Script>Audio.Stop(CHANNEL_BACKGROUND);
+</Script>
 <TreeStates>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>3158064</DesignCodeLine>
-<DesignCodeCol>2573</DesignCodeCol>
+<DesignCodeLine>1</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -333,7 +337,7 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>3158064</DesignCodeLine>
+<DesignCodeLine>0</DesignCodeLine>
 <DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
@@ -347,7 +351,7 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>5857125</DesignCodeLine>
+<DesignCodeLine>0</DesignCodeLine>
 <DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
@@ -361,8 +365,8 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>2560</DesignCodeLine>
-<DesignCodeCol>54</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -375,8 +379,8 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>199</DesignCodeLine>
-<DesignCodeCol>197</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -389,8 +393,8 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>24</DesignCodeLine>
-<DesignCodeCol>6</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -403,8 +407,8 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>75497489</DesignCodeLine>
-<DesignCodeCol>524290</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
@@ -417,11 +421,346 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>758</DesignCodeLine>
-<DesignCodeCol>18</DesignCodeCol>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
+<Object>
+<Type>3</Type>
+<Name>Image1</Name>
+<VisibleAtDesignTime>1</VisibleAtDesignTime>
+<VisibleAtRunTime>1</VisibleAtRunTime>
+<Locked>0</Locked>
+<Enabled>1</Enabled>
+<ToolTip/>
+<Cursor>0</Cursor>
+<Group>0</Group>
+<MaintainAspectRatio>1</MaintainAspectRatio>
+<Pin>0</Pin>
+<TabIndex>-1</TabIndex>
+<AutoResize>0</AutoResize>
+<Coordinates>
+<Top>344</Top>
+<Bottom>600</Bottom>
+<Left>672</Left>
+<Right>928</Right>
+</Coordinates>
+<Ratios>
+<WidthRatio>-1.000000</WidthRatio>
+<HeightRatio>-1.000000</HeightRatio>
+</Ratios>
+<Event>
+<Name>On Click</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Right-Click</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Enter</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>524298</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Leave</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>510</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Actions/>
+<NormalImage>
+<Filename>AutoPlay\Images\Title No BG.png</Filename>
+<UseTransColor>0</UseTransColor>
+<TransClr>16777215</TransClr>
+<TransTolerance>10</TransTolerance>
+<Opacity>100</Opacity>
+<HTMode>0</HTMode>
+</NormalImage>
+<MouseOverSndMode>0</MouseOverSndMode>
+<MouseOverSound/>
+<MouseClickSndMode>0</MouseClickSndMode>
+<MouseClickSound/>
+</Object>
+<Object>
+<Type>0</Type>
+<Name>btn select project</Name>
+<VisibleAtDesignTime>1</VisibleAtDesignTime>
+<VisibleAtRunTime>1</VisibleAtRunTime>
+<Locked>0</Locked>
+<Enabled>1</Enabled>
+<ToolTip/>
+<Cursor>1</Cursor>
+<Group>0</Group>
+<MaintainAspectRatio>0</MaintainAspectRatio>
+<Pin>0</Pin>
+<TabIndex>-1</TabIndex>
+<AutoResize>0</AutoResize>
+<Coordinates>
+<Top>735</Top>
+<Bottom>790</Bottom>
+<Left>487</Left>
+<Right>1114</Right>
+</Coordinates>
+<Ratios>
+<WidthRatio>-1.000000</WidthRatio>
+<HeightRatio>-1.000000</HeightRatio>
+</Ratios>
+<Event>
+<Name>On Click</Name>
+<Args/>
+<Script>local pFolder = Dialog.FolderBrowse("Please select an AutoPlay Media Studio project folder:", "AutoPlay\\Docs");
+
+--get the AMS project folder
+if (pFolder ~= "CANCEL") then
+	--look for the autoplay file
+	local tFiles = File.Find(pFolder, "*.autoplay", false, false, nil, nil);
+	local bPathIsGood = tFiles and type(tFiles[1] ~= "nil");
+	
+	if (bPathIsGood) then
+		--make sure the program has write access to the folder
+			
+			
+		--save the project name
+	else
+		Dialog.Message("Error", "Selected folder does not appear to contain an AutoPlay Media Studio project.", MB_OK, MB_ICONSTOP, MB_DEFBUTTON1);
+
+			
+	end
+
+end</Script>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>14</DesignCodeLine>
+<DesignCodeCol>2</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Right-Click</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Enter</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Leave</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>0</DesignCodeLine>
+<DesignCodeCol>0</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Actions/>
+<BUTTON>
+<Filename>AutoPlay\Buttons\Select Project.btn</Filename>
+<Style>0</Style>
+<State>0</State>
+<Caption/>
+<Align>1</Align>
+<UpColor>16777215</UpColor>
+<HighlightColor>16777215</HighlightColor>
+<DownColor>16777215</DownColor>
+<DisabledColor>16777215</DisabledColor>
+<FontData>
+<FontName>Arial</FontName>
+<CharacterSet>0</CharacterSet>
+<Height>-19</Height>
+<Weight>700</Weight>
+<Italic>0</Italic>
+<Underline>0</Underline>
+<StrikeOut>0</StrikeOut>
+<AntiAlias>1</AntiAlias>
+</FontData>
+<CapXOff>0</CapXOff>
+<CapYOff>0</CapYOff>
+<LeftMargin>0</LeftMargin>
+<RightMargin>0</RightMargin>
+<MouseOverSndMode>0</MouseOverSndMode>
+<MouseOverSound/>
+<MouseClickSndMode>0</MouseClickSndMode>
+<MouseClickSound/>
+</BUTTON>
+</Object>
+<Object>
+<Type>0</Type>
+<Name>btn previous project</Name>
+<VisibleAtDesignTime>1</VisibleAtDesignTime>
+<VisibleAtRunTime>1</VisibleAtRunTime>
+<Locked>0</Locked>
+<Enabled>1</Enabled>
+<ToolTip/>
+<Cursor>1</Cursor>
+<Group>0</Group>
+<MaintainAspectRatio>0</MaintainAspectRatio>
+<Pin>0</Pin>
+<TabIndex>-1</TabIndex>
+<AutoResize>0</AutoResize>
+<Coordinates>
+<Top>829</Top>
+<Bottom>901</Bottom>
+<Left>334</Left>
+<Right>1267</Right>
+</Coordinates>
+<Ratios>
+<WidthRatio>-1.000000</WidthRatio>
+<HeightRatio>-1.000000</HeightRatio>
+</Ratios>
+<Event>
+<Name>On Click</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>5857125</DesignCodeLine>
+<DesignCodeCol>1082307584</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Right-Click</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>5832807</DesignCodeLine>
+<DesignCodeCol>1083444736</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Enter</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>4063342</DesignCodeLine>
+<DesignCodeCol>3670016</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Event>
+<Name>On Leave</Name>
+<Args/>
+<Script/>
+<TreeStates>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+<TreeState>0</TreeState>
+</TreeStates>
+<DesignCodeLine>4079394</DesignCodeLine>
+<DesignCodeCol>2573</DesignCodeCol>
+<BookMarks count="0">
+</BookMarks>
+</Event>
+<Actions/>
+<BUTTON>
+<Filename>AutoPlay\Buttons\Previous Project.btn</Filename>
+<Style>0</Style>
+<State>0</State>
+<Caption/>
+<Align>1</Align>
+<UpColor>16777215</UpColor>
+<HighlightColor>16777215</HighlightColor>
+<DownColor>16777215</DownColor>
+<DisabledColor>16777215</DisabledColor>
+<FontData>
+<FontName>Arial</FontName>
+<CharacterSet>0</CharacterSet>
+<Height>-19</Height>
+<Weight>700</Weight>
+<Italic>0</Italic>
+<Underline>0</Underline>
+<StrikeOut>0</StrikeOut>
+<AntiAlias>1</AntiAlias>
+</FontData>
+<CapXOff>0</CapXOff>
+<CapYOff>0</CapYOff>
+<LeftMargin>0</LeftMargin>
+<RightMargin>0</RightMargin>
+<MouseOverSndMode>0</MouseOverSndMode>
+<MouseOverSound/>
+<MouseClickSndMode>0</MouseClickSndMode>
+<MouseClickSound/>
+</BUTTON>
+</Object>
 <HGuidelines/>
 <VGuidelines/>
 </Page>
@@ -599,9 +938,9 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <AutoResize>0</AutoResize>
 <Coordinates>
 <Top>0</Top>
-<Bottom>1200</Bottom>
+<Bottom>1280</Bottom>
 <Left>0</Left>
-<Right>400</Right>
+<Right>330</Right>
 </Coordinates>
 <Ratios>
 <WidthRatio>-1.000000</WidthRatio>
@@ -665,13 +1004,13 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 </Event>
 <Actions/>
 <Text>
-<Body/>
+<Body>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat ligula, vehicula at placerat sed, aliquam quis arcu. Praesent ut dui massa, condimentum placerat ante. Sed fermentum felis id justo ornare dapibus. Cras auctor nisi id magna elementum scelerisque. Suspendisse at eros ut lectus lacinia lacinia rutrum sed magna. Praesent pharetra elit in ligula semper eu tempor augue venenatis. Suspendisse rutrum elementum condimentum. Nulla facilisi. Nulla pharetra enim eu arcu mattis volutpat. Etiam in ante nec erat suscipit dictum. Integer quis arcu quis massa porta lobortis. Aliquam at tincidunt tortor. Suspendisse mi tellus, sagittis in dignissim eu, semper vel sapien. Ut cursus porttitor felis.</Body>
 <NormalColor>0</NormalColor>
 <HighlightColor>0</HighlightColor>
 <MouseDownColor>0</MouseDownColor>
 <DisabledColor>12632256</DisabledColor>
 <BorderColor>0</BorderColor>
-<BackColor>12632256</BackColor>
+<BackColor>16777215</BackColor>
 <FontData>
 <FontName>Segoe UI</FontName>
 <CharacterSet>0</CharacterSet>
@@ -683,12 +1022,12 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <AntiAlias>1</AntiAlias>
 </FontData>
 <Alignment>0</Alignment>
-<TransBG>0</TransBG>
-<VSMode>2</VSMode>
+<TransBG>1</TransBG>
+<VSMode>0</VSMode>
 <HSMode>2</HSMode>
 <SBStyle>1</SBStyle>
 <SBSkin>Windows7</SBSkin>
-<Border>1</Border>
+<Border>0</Border>
 <MouseOverSndMode>0</MouseOverSndMode>
 <MouseOverSound/>
 <MouseClickSndMode>0</MouseClickSndMode>
@@ -872,8 +1211,8 @@ print(SIM2D.PATH.DIR.WRITE)</Script>
 <AutoResize>0</AutoResize>
 <Coordinates>
 <Top>0</Top>
-<Bottom>1200</Bottom>
-<Left>397</Left>
+<Bottom>1280</Bottom>
+<Left>281</Left>
 <Right>1600</Right>
 </Coordinates>
 <Ratios>
