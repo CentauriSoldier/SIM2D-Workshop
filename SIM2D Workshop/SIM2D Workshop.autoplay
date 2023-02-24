@@ -64,7 +64,10 @@
 </AudioBGMusic>
 <Globals>
 <Script>Project.Init("Sim2D Workshop", "Centauri Soldier", "", "https://github.com/CentauriSoldier/Sim2D", "", "The Unlicense", "Free to use and distribute", "Sim2D Workshop.exe", "Sim2D Workshop.ico", "", "", "", false);
-require("Sim2D.Init")
+require("Sim2D.Init");
+
+
+
 
 S2DProject = {
 
@@ -72,7 +75,7 @@ S2DProject = {
 <BookMarks count="0">
 </BookMarks>
 <DesignCodeLine>1</DesignCodeLine>
-<DesignCodeCol>0</DesignCodeCol>
+<DesignCodeCol>22</DesignCodeCol>
 </Globals>
 <Defaults>
 <StartupPage>_PageFirst</StartupPage>
@@ -288,14 +291,16 @@ S2DProject = {
 <Event>
 <Name>On Preload</Name>
 <Args/>
-<Script>Audio.Load(CHANNEL_BACKGROUND, "AutoPlay\\Audio\\password-infinity-123276.mp3", true, false);</Script>
+<Script>Audio.Load(CHANNEL_BACKGROUND, "AutoPlay\\Audio\\Music\\password-infinity-123276.mp3", false, false);
+Audio.SetVolume(CHANNEL_BACKGROUND, 80);
+Audio.Play(CHANNEL_BACKGROUND);</Script>
 <TreeStates>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 <TreeState>0</TreeState>
 </TreeStates>
-<DesignCodeLine>0</DesignCodeLine>
-<DesignCodeCol>93</DesignCodeCol>
+<DesignCodeLine>1</DesignCodeLine>
+<DesignCodeCol>37</DesignCodeCol>
 <BookMarks count="0">
 </BookMarks>
 </Event>
